@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+  }
+  
+ 
+  .main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1140px;
+  }
+  
+  .side1, .side2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .page, .page1, .page2, .page3, .page4 {
+    background-color: #7db933;
+    box-shadow: 0px 2px 10px #ddd;
+    border-radius: 5px;
+    /* padding: 20px; */
+    width: 450px;
+    text-align: center;
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .page:hover, .page1:hover, .page2:hover, .page3:hover, .page4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 20px #ddd;
+  }
+  
+ 
+  
+  p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .b {
+    color: black;
+    font-weight: 400;
+    font-weight: bold;
+    font-size: 24px;
+  
+    margin-bottom: 10px;
+  }
+  
+  .row {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .box {
+    width: 320px;
+    height: 500px;
+    border-radius: 20px; 
+    background-color: #7db933;
+    box-shadow: 0px 2px 10px #ddd;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  
+  .box h3 {
+    font-size
+  : 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fff;
+  }
+  
+  .box p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #333;
+  }
+  
+  .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 20px #ddd;
+  }
+  /* Banner Section */
+  .banner-section .container .banner{
+    width: 100%;
+    height: 500px;
+  }
+  
+  .banner-section {
+  background-image: url(../images/devin-h-p51V2hcqRhc-unsplash.jpg);
+  width: 100%;
+  height: auto;
+  background-position: top;
+  margin-bottom: 10px;
+  }
+  .banner-section .container .banner h1{
+    text-align: initial;
+    font-size: 40px;
+    max-width: 400px;
+    position: absolute;
+    top: 270px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: whitesmoke;
+    
+  }
+
+  .banner-section .container .banner .contents .banner-button .btn{
+  position: absolute;
+  top: 370px;
+  font-size: 25px;
+  padding: 10px;
+  background-color: #7db933;
+    text-decoration: none;
+    color: white;
+  }
+  .banner-section .container .banner .contents .banner-button .btn:hover{
+    color:White;
+    background-color: blueviolet;
+  }
+  /* class a */
+  .a .row{
+    margin-bottom: 20px;
+  }
+  
