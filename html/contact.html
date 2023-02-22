@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/Style.css">    
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="logo"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+    </nav>
+    
+    <!-- Code for Contact form with actual functionality. -->
+    <div class="contact_container">
+        <form id="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <span id="nameError" class="error"></span>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email " required>
+            <span id="emailError" class="error"></span>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <span id="phoneError" class="error"></span>
+            <br>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" placeholder="Your Feedback" required></textarea>
+            <span id="feedbackError" class="error"></span>
+            <br>
+            <input type="submit" value="Submit">
+        </form>     
+          
+    </div>
+   
+    <!-- An external css for form validation. -->
+    <script src="../js/contact.js"></script>
+</body>
+
+<!-- A simple Footer with inline css. -->
+<table id="footer" align="center">
+	<tr>
+	  <td>Copyright © 2023</td>
+	  <td>All rights reserved</td>
+	</tr>
+  </table>
+
+</html>

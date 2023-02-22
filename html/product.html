@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai Ghar</title>
+    
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/Style.css">
+
+    <!-- Custom internal Javascript for Increment feature on the cart -->
+    <script>
+      function increaseCount() {
+        let cartCount = parseInt(document.getElementById("cartCount").innerHTML);
+        cartCount++;
+        document.getElementById("cartCount").innerHTML = cartCount;
+      }
+    </script>
+  </head>
+
+    <!-- Nav Bar -->
+    <nav>
+      <div class="container">
+        <div class="logo"></div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  <body>
+
+    <!--  Simpel internal css for the increment element in the product page. -->
+    <style>
+        h1 {
+          text-align: center;
+          font-size: 3em;
+          color: #333;
+          text-shadow: 0 2px #ccc;
+        }
+        
+        p {
+          text-align: center;
+          font-size: 1.5em;
+          color: #333;
+          margin-top: 20px;
+        }
+        
+        span#cartCount {
+          font-weight: bold;
+          color: #00bfff;
+        }
+      </style>
+
+    <!-- Increment feature element -->
+    <h1>Shopping Cart</h1>
+     <p>Item Count: <span id="cartCount">0</span></p>
+
+   <!-- Our products. -->
+    <form class="search-form">
+      <input type="text" class="search-input" placeholder="Search products">
+    </form>
+    <div class="container">
+
+      <!-- Use of inline css -->
+      <h2 class="title" style="font-size: 3.5em; font-weight: bold; text-transform: uppercase; text-align: center;">Our products</h2>
+
+      <div class="product-container">
+        <div class="product" data-name="product-1">
+          <img src="../images/large_rock_juniper.webp" alt="Large Rock Juniper">
+          <h3>Large Rock Juniper</h3>
+          <p class="sold-out">Npr 6900</p> Npr 6300
+          <p>
+          
+            <!--Javascript code for implementation of cart increment feature -->
+          <p>
+            <button onclick="increaseCount()">Add to Cart</button>
+          </p>
+        </div>
+
+        <div class="product" data-name="product-2">
+          <img src="../images/taiwan_fucus.webp" alt="Taiwan Fucus">
+          <h3>Taiwan Fucus</h3>
+          <p class="sold-out">Npr 6900</p> Npr 6300
+          <p>
+            <button onclick="increaseCount()">Add to Cart</button>
+          </p>
+        </div>
+
+        <div class="product" data-name="product-3">
+            <img src="../images/golden_gate_fucus.jpg" alt="bonsai first">
+            <h3>Golden Gate Fucus </h3>
+            <p class="sold-out">Npr 6900</p> Npr 6300
+            <p>
+                <button onclick="increaseCount()">Add to Cart</button>
+            </p>
+        </div>
+
+        <div class="product" data-name="product-4">
+            <img src="../images/young_juniper.webp" alt="bonsai first">
+            <h3>Young Juniper</h3>
+            <p class="sold-out">Npr 3000</p> Npr 2750
+            <p>
+                <button onclick="increaseCount()">Add to Cart</button>
+            </p>
+        </div>
+
+        <div class="product" data-name="product-5">
+            <img src="../images/panda_ledge_hanger.webp" alt="bonsai first">
+            <h3>Panda Ledge Hanger</h3>
+            <p class="sold-out">Npr 2000</p> Npr 1650
+            <p>
+                <button onclick="increaseCount()">Add to Cart</button>
+            </p>
+        </div>
+
+        <div class="product" data-name="product-6">
+            <img src="../images/pomegranate_bonsai.webp" alt="bonsai first">
+            <h3>Pomegranate Bonsai</h3>
+            <p class="sold-out">Npr 5000</p> Npr 4000
+            <p>
+                <button onclick="increaseCount()">Add to Cart</button>
+            </p>
+        </div>
+
+        <div class="product" data-name="product-7">
+            <img src="../images/miniature_golden_gate_fucus.webp" alt="bonsai first">
+            <h3>Miniature Golden Gate Fucus</h3>
+            <p class="sold-out">Npr 5500</p> Npr 4800
+            <p>
+                <button onclick="increaseCount()">Add to Cart</button>
+            </p>
+        </div>
+
+        <div class="product" data-name="product-8">
+            <img src="../images/junipers_saikei.jpg" alt="bonsai first">
+            <h3>Juniper Saikei</h3>
+            <p class="sold-out">Npr 6000</p> Npr 5600
+            <p>
+                <button onclick="increaseCount()">Add to Cart</button>
+            </p>            
+        </div>
+
+        <div class="product" data-name="product-9">
+            <img src="../images/ponderosa_pine.jpg" alt="bonsai first">
+            <h3>Ponderosa Pine</h3>
+            <p class="sold-out">Npr 13000</p> Npr 10000
+            <p>
+                <button onclick="increaseCount()">Add to Cart</button>
+            </p> 
+        </div>
+
+        <div class="product" data-name="product-10">
+            <img src="../images/scots_pine.jpg" alt="bonsai first">
+            <h3>Scots Pine</h3>
+            <p class="sold-out">Npr 5500</p> Npr 5000
+            <p>
+                <button onclick="increaseCount()">Add to Cart</button>
+            </p>           
+        </div>          
+    </div>  
+</body>
+
+<!-- A simple Footer with inline css. -->
+<table id="footer" align="center">
+	<tr>
+	  <td>Copyright © 2023</td>
+	  <td>All rights reserved</td>
+	</tr>
+  </table>
+</section>
+</html>

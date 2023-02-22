@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai Ghar</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/Style.css">
+
+    <!--required css for the implementation of darkmode in the blog page. -->
+    <style>
+      body {
+        background-color: #fff;
+        color: #000;
+        transition: all 0.5s;
+      }
+      
+      body.dark {
+        background-color: #333;
+        color: #fff;
+      }
+
+      button#toggleDarkMode {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+      }
+
+      button#toggleDarkMode svg {
+        width: 2em;
+        height: 2em;
+        align-items: right;
+      }
+      body.dark {
+        color: #fff;
+      }
+
+      body {
+       color: #000;
+      }
+    </style>
+
+    <!--Required JavaScript Code for the dark mode implementation-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const toggleDarkMode = document.getElementById('toggleDarkMode');
+        toggleDarkMode.addEventListener('click', function() {
+          document.body.classList.toggle('dark');
+        });
+      });
+    </script>
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="container">
+        <div class="logo">Bonsai Ghar</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+
+        <!-- Dark mode toggle button -->
+        <button id="toggleDarkMode">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="#000" d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/>
+          </svg>
+        </button>
+
+    </ul>
+    </div>
+</nav>
+
+
+<!-- Blog on the Impact of Technology -->
+<section class="Blog">
+    <div class="container">
+        <div id="blog-page">
+            <h1 style="color: rgb(10, 10, 78); font-size: 36px; font-weight: bold; text-align: center;" >The Impact of Technology in Daily Life</h1>
+            <img src="../images/impact_technology.jpg" alt="technology image 1" class="align-right" style="float: right; width: 30%; margin: 0 0 20px 20px;" >
+             <p style="color: rgb(19, 5, 5); font-size: 18px; line-height: 1.5; text-align: justify;" >Technology has had a profound impact on our daily lives in recent years. From the way we communicate to the way we work and play, technology has changed the way we live and interact with the world around us. In this article, we'll explore some of the ways technology has impacted our lives in the 21st century.</p>
+            <h2>Communication</h2>
+            <img src="../images/communications_1.jpg" alt="technology image 2" class="align-left">
+            <p>One of the most obvious ways technology has impacted our daily lives is through communication. The advent of smartphones and social media has made it easier than ever to stay connected with friends and family, regardless of distance. Instant messaging, video calls, and social media platforms like Facebook and Instagram allow us to share our thoughts, feelings, and experiences with others in real-time.</p>
+            
+            <h2>Work and Productivity</h2>
+            <img src="../images/work_hard.jpg" alt="technology image 3" class="align-right">
+            <p>Technology has also had a major impact on the way we work and how productive we are. The rise of the internet and cloud computing has made it possible for people to work from anywhere, at any time. This has led to the rise of remote work and freelancing, allowing people to have more flexibility in their careers. Additionally, productivity tools like Trello and Asana have made it easier for teams to collaborate and stay organized, leading to increased efficiency and productivity.</p>
+          
+            <h2>Entertainment and Gaming</h2>
+            <img src="../images/gaming.jpg" alt="technology image 4" class="align-left">
+            <p>Technology has also had a significant impact on the way we entertain ourselves. The rise of streaming services like Netflix and Hulu has made it easier than ever to access our favorite movies and TV shows. Online gaming has also grown in popularity, with platforms like Steam and the PlayStation Network offering a vast library of games for players to enjoy. Virtual and augmented reality technology is also becoming more mainstream, offering new ways for people to experience entertainment and gaming.</p>
+          
+            <h2>Shopping and E-commerce</h2>
+            <img src="../images/ecommerce.jpg" alt="technology image 5" class="align-right">
+            <p>Technology has also changed the way we shop and engage with e-commerce. Online shopping has become the norm, with platforms like Amazon and Etsy making it easy to purchase goods from the comfort of our own homes. Additionally, mobile payment systems like Apple Pay and Google Wallet have made it easier to pay for goods and services, eliminating the need for cash and credit cards. </p>
+          
+            <h2>Conclusion</h2>
+            <p>In conclusion, technology has had a profound impact on our daily lives. From the way we communicate to the way we work and play, technology has changed the way we live and interact with the world around us. While there are certainly challenges and drawbacks to the rapid pace of technological advancement, the benefits of technology in our daily lives are undeniable.</p>
+          </div>
+          
+</section>
+</body>
+
+<!-- A simple footer with crispy footer -->
+<table id="footer" align="center">
+	<tr>
+	  <td>Copyright © 2023</td>
+	  <td>All rights reserved</td>
+	</tr>
+  </table>
+
+</html>
