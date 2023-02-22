@@ -1,0 +1,1 @@
+This folder contain the documentation of the entire web development project.
